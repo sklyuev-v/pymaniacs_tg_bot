@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pymaniac-mega-bot"
+version = "0.1.0"
+description = "Mega-bot for PythonRush Course"
+authors = ["Sklyuev Viktor <sklyevv@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "py_bot"}]
+
+[tool.poetry.scripts]
+tg_bot = "py_bot.bot:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-telegram-bot = "^21.6"
+openai = "^1.52.2"
+environs = "^11.0.0"
+requests = "^2.32.3"
+aiohttp = "^3.10.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
